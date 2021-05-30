@@ -1,0 +1,12 @@
+server:
+  port: 9051
+
+keycloak:
+  realm: springboot-keycloak-app
+  auth-server-url: http://localhost:8080/auth
+  ssl-required: external
+  resource: amx-login-app
+  credentials:
+    secret: 51d3f606-ccb1-40b7-8269-3b6f26d367b3
+  use-resource-role-mappings: true
+  bearer-only: true
